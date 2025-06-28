@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{75EF6886-63D5-480F-AA65-F881B48266F5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SuperShopping</RootNamespace>
+    <AssemblyName>SuperShopping</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBConnect.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3Cat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3Cat.Designer.cs">
+      <DependentUpon>Form3Cat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddSeller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddSeller.Designer.cs">
+      <DependentUpon>FormAddSeller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdmin.Designer.cs">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProduct.Designer.cs">
+      <DependentUpon>FormProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSelling.Designer.cs">
+      <DependentUpon>FormSelling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OnLineShoppingDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OnLineShoppingDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OnLineShoppingDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OnLineShoppingDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OnLineShoppingDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OnLineShoppingDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OnLineShoppingDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OnLineShoppingDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OnLineShoppingDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OnLineShoppingDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OnLineShoppingDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OnLineShoppingDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OnLineShoppingDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OnLineShoppingDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OnLineShoppingDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OnLineShoppingDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OnLineShoppingDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OnLineShoppingDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3Cat.resx">
+      <DependentUpon>Form3Cat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddSeller.resx">
+      <DependentUpon>FormAddSeller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdmin.resx">
+      <DependentUpon>FormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProduct.resx">
+      <DependentUpon>FormProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelling.resx">
+      <DependentUpon>FormSelling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="OnLineShoppingDataSet.xsc">
+      <DependentUpon>OnLineShoppingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OnLineShoppingDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OnLineShoppingDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OnLineShoppingDataSet.xss">
+      <DependentUpon>OnLineShoppingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="OnLineShoppingDataSet1.xsc">
+      <DependentUpon>OnLineShoppingDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="OnLineShoppingDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OnLineShoppingDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OnLineShoppingDataSet1.xss">
+      <DependentUpon>OnLineShoppingDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="OnLineShoppingDataSet2.xsc">
+      <DependentUpon>OnLineShoppingDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="OnLineShoppingDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OnLineShoppingDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OnLineShoppingDataSet2.xss">
+      <DependentUpon>OnLineShoppingDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="OnLineShoppingDataSet3.xsc">
+      <DependentUpon>OnLineShoppingDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="OnLineShoppingDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OnLineShoppingDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OnLineShoppingDataSet3.xss">
+      <DependentUpon>OnLineShoppingDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="OnLineShoppingDataSet4.xsc">
+      <DependentUpon>OnLineShoppingDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="OnLineShoppingDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OnLineShoppingDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OnLineShoppingDataSet4.xss">
+      <DependentUpon>OnLineShoppingDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="OnLineShoppingDataSet5.xsc">
+      <DependentUpon>OnLineShoppingDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="OnLineShoppingDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OnLineShoppingDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OnLineShoppingDataSet5.xss">
+      <DependentUpon>OnLineShoppingDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="OnLineShoppingDataSet6.xsc">
+      <DependentUpon>OnLineShoppingDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="OnLineShoppingDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OnLineShoppingDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OnLineShoppingDataSet6.xss">
+      <DependentUpon>OnLineShoppingDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="OnLineShoppingDataSet7.xsc">
+      <DependentUpon>OnLineShoppingDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="OnLineShoppingDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OnLineShoppingDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OnLineShoppingDataSet7.xss">
+      <DependentUpon>OnLineShoppingDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="OnLineShoppingDataSet8.xsc">
+      <DependentUpon>OnLineShoppingDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="OnLineShoppingDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OnLineShoppingDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="OnLineShoppingDataSet8.xss">
+      <DependentUpon>OnLineShoppingDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
